@@ -1,6 +1,25 @@
 #main {
     /* add CSS here */
+    max-width: 960px;
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 .pet {
     /* add CSS here */
+    border: 3px dotted #fa0279;
+    border-radius: 25px;
+    box-shadow: 8px 8px 15px grey;
+}
+
+p{
+    font-family: cursive;
+}
+
+.pet:hover{
+    cursor: pointer;
+}
+
+i:hover{
+    cursor: alias;
 }

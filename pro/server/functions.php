@@ -8,6 +8,8 @@ function getCats(){
     while($row = mysqli_fetch_assoc($getCatsResult)){
         $cat_id = $row['cat_id'];
         $cat_title = $row['cat_title'];
+
+        echo "<li><a class='nav-link'  href='#'>$cat_title</a></li>";
         echo "<li><a class='nav-link'  href='index.php?cat=$cat_id'>$cat_title</a></li>";
     }
 }
@@ -18,6 +20,7 @@ function getBrands(){
     while($row = mysqli_fetch_assoc($getBrandsResult)){
         $brand_id = $row['brand_id'];
         $brand_title = $row['brand_title'];
+        echo "<li><a class='nav-link'  href='#'>$brand_title</a></li>";
         echo "<li><a class='nav-link'  href='index.php?brand=$brand_id'>$brand_title</a></li>";
     }
 }
